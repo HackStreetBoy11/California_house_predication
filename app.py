@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 
 app = Flask(__name__)
-model=pickle.load(open('regmodel.pkl','rb'))
-scaler=pickle.load(open('scaler.pkl','rb'))
+model=pickle.load(open('/model/regmodel.pkl','rb'))
+scaler=pickle.load(open('/model/scaler.pkl','rb'))
 
 @app.route('/')
 def home():
